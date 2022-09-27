@@ -3,6 +3,7 @@ package com.dani.lingua;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -146,7 +147,7 @@ public class MainActivity extends AppCompatActivity{
             public void onClick(View view) {
                 Intent myIntent = new Intent(MainActivity.this, Activity3.class);
                 //myIntent.putExtra("key", value); //Optional parameters
-                MainActivity.this.startActivity(myIntent);
+                MainActivity.this.startActivity(myIntent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
             }
         });
     }
