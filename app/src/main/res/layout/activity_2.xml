@@ -8,20 +8,63 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="410dp"
         android:layout_height="728dp"
+        android:background="@drawable/frame"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <VideoView
             android:id="@+id/video"
-            android:layout_width="359dp"
-            android:layout_height="447dp"
+            android:layout_width="294dp"
+            android:layout_height="196dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.348" />
+            app:layout_constraintVertical_bias="0.353" />
+
+        <Button
+            android:id="@+id/salir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="68dp"
+            android:text="Salir"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="155dp"
+            android:layout_height="71dp"
+            android:text="FIN"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            tools:layout_editor_absoluteX="128dp"
+            tools:layout_editor_absoluteY="99dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JUGAR DE NUEVO"
+            app:layout_constraintBottom_toTopOf="@+id/salir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video"
+            app:layout_constraintVertical_bias="0.955" />
+
+        <TextView
+            android:id="@+id/puntuacion"
+            android:layout_width="256dp"
+            android:layout_height="54dp"
+            android:text="Puntuacion"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="79dp"
+            tools:layout_editor_absoluteY="417dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
