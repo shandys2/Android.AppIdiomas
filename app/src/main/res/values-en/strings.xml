@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lingua</string>
+    <string name="perroP">DOG</string>
+    <string name="perroR">PERRO</string>
+    <string name="perro2P">DOG</string>
+    <string name="perro2R">PERRO</string>
+    <string name="gatoP">CAT</string>
+    <string name="gatoR">GATO</string>
+    <string name="gato2P">CAT</string>
+    <string name="gato2R">GATO</string>
+    <string name="gallina">GALLINA</string>
+    <string name="puertaP">DOOR</string>
+    <string name="puertaR">PUERTA</string>
+    <string name="escobaP">ESCOBATION</string>
+    <string name="escobaR">ESCOBA</string>
+    <string name="silla">SILLA</string>
+    <string name="puerto">PUERTO</string>
+    <string name="movilP">MOBILE</string>
+    <string name="movilR">MOVIL</string>
+    <string name="sofaP">SOFING</string>
+    <string name="sofaR">SOFA</string>
+    <string name="lamparaP">LIGTH</string>
+    <string name="lamparaR">LAMPARA</string>
+
+
+</resources>

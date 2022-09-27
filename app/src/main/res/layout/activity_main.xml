@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="374dp"
+        android:layout_height="442dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/res1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/res2"
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/res3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/res4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/res5"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/res6"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Button" />
+
+            <ImageButton
+                android:id="@+id/b1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/perro" />
+
+            <ImageButton
+                android:id="@+id/b2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/gato" />
+
+            <ImageButton
+                android:id="@+id/b3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/lampara" />
+
+            <ImageButton
+                android:id="@+id/b4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/movil" />
+
+            <ImageButton
+                android:id="@+id/b5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/sofa" />
+
+            <ImageButton
+                android:id="@+id/b6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/escoba" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/pregunta"
+        android:layout_width="334dp"
+        android:layout_height="51dp"
+        android:text="PREGUNTA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <Button
+        android:id="@+id/siguienteFase"
+        android:layout_width="143dp"
+        android:layout_height="60dp"
+        android:text="Siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/voz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="VOZ"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pregunta"
+        app:layout_constraintVertical_bias="0.538" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
