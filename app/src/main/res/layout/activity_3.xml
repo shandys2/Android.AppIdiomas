@@ -10,24 +10,24 @@
 
     <ScrollView
         android:id="@+id/scrollView"
-        android:layout_width="374dp"
-        android:layout_height="442dp"
+        android:layout_width="297dp"
+        android:layout_height="432dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:animateLayoutChanges="true">
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/b1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="106dp"
                 app:srcCompat="@drawable/perro" />
 
             <ImageButton
@@ -64,12 +64,17 @@
 
     <TextView
         android:id="@+id/pregunta2"
-        android:layout_width="115dp"
-        android:layout_height="51dp"
+        android:layout_width="204dp"
+        android:layout_height="46dp"
         android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/scrollView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.815" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

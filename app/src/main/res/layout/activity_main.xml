@@ -3,30 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/frame"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
-    tools:context=".MainActivity"
-   >
+    android:background="@drawable/frame"
+    tools:context=".MainActivity">
 
 
     <ScrollView
         android:id="@+id/scrollView"
-        android:layout_width="374dp"
-        android:layout_height="442dp"
+        android:layout_width="299dp"
+        android:layout_height="414dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.602">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="-144dp"
+            tools:layout_editor_absoluteY="-280dp">
 
 
             <Button
@@ -105,16 +105,19 @@
 
     <TextView
         android:id="@+id/pregunta"
-        android:layout_width="334dp"
-        android:layout_height="51dp"
+        android:layout_width="224dp"
+        android:layout_height="42dp"
+        android:background="#00FFFFFF"
         android:text="PREGUNTA"
-        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/scrollView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.352"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.17" />
+        app:layout_constraintVertical_bias="0.791" />
 
     <Button
         android:id="@+id/siguienteFase"
@@ -131,15 +134,14 @@
 
     <Button
         android:id="@+id/voz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:text="VOZ"
+        android:layout_width="61dp"
+        android:layout_height="47dp"
+        android:foreground="@android:drawable/ic_btn_speak_now"
         app:layout_constraintBottom_toTopOf="@+id/scrollView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.879"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pregunta"
-        app:layout_constraintVertical_bias="0.538" />
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/pregunta"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.819" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

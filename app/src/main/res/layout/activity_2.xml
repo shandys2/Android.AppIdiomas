@@ -28,11 +28,11 @@
             android:id="@+id/salir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="68dp"
+            android:layout_marginBottom="72dp"
             android:text="Salir"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintHorizontal_bias="0.465"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
@@ -55,7 +55,7 @@
             app:layout_constraintHorizontal_bias="0.481"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/video"
-            app:layout_constraintVertical_bias="0.955" />
+            app:layout_constraintVertical_bias="0.857" />
 
         <TextView
             android:id="@+id/puntuacion"
