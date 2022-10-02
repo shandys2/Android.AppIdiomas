@@ -148,6 +148,7 @@ public class MainActivity extends AppCompatActivity{
                 Intent myIntent = new Intent(MainActivity.this, Activity3.class);
                 //myIntent.putExtra("key", value); //Optional parameters
                 MainActivity.this.startActivity(myIntent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
+
             }
         });
     }

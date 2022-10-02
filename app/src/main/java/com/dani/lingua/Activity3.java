@@ -61,6 +61,7 @@ public class Activity3 extends AppCompatActivity {
         iDog = R.drawable.perro;
         iGato = R.drawable.gato;
 
+        //Aqui guardamos los nombres de las imagenes
         sImagenes = new String[]{  getResources().getResourceEntryName(iGato),
                 getResources().getResourceEntryName(iSofa),
                 getResources().getResourceEntryName(iMovil),
@@ -68,7 +69,7 @@ public class Activity3 extends AppCompatActivity {
                 getResources().getResourceEntryName(iDog),
                 getResources().getResourceEntryName(iEscoba)
         };
-
+        //Aqui guardamos los codigos de las imagenes
         iDrawable =new Drawable[]{getResources().getDrawable(iGato),
                 getResources().getDrawable(iSofa),
                 getResources().getDrawable(iMovil),
@@ -76,7 +77,7 @@ public class Activity3 extends AppCompatActivity {
                 getResources().getDrawable(iDog),
                 getResources().getDrawable(iEscoba)};
 
-        //asignamos los eventos a todos los ImageButtons
+        //asignamos el evento a todos los ImageButtons
         for (ImageButton iBoton: iButtons) {
             iBoton.setOnClickListener(view -> {
                 comprobarRespuestaImagen(iBoton);
